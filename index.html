@@ -1,0 +1,202 @@
+<!dOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jq</title>
+
+	<!-- css links -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<section>
+	<div class="container">
+		<div class="row-cols-12">
+			<div id="draggable" class="ui-widget-content">
+            <p>Drag me around</p>
+	</div>
+  </div>
+</section>
+<hr>
+<div class="container">
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+ </div>
+</div>
+<hr>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+	<form action="">
+		<div class="mt-3 mb-3">
+			<label for="courses">Enter your full name</label>
+			<input type="text" class="form-control rounded-0" id="courses">
+		</div>
+		<div class="mb-3">
+			<button type="submit" class="btn btn-danger w-100 rounded-0">Submit</button>
+		</div>
+	</form>
+    </div>
+  </div>
+</div>
+<hr> 
+<!-- droppable -->
+<div class="container">
+	<div class="row">
+	<div id="draggable2" class="ui-widget-content">
+      	<p>Drag me to my target</p>
+		</div>
+
+		<div id="droppable" class="ui-widget-header">
+  		<p>Drop here</p>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+			<ul id="sortable">
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+</ul>
+     </div>		
+   </div>	
+</div>
+<hr>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+			<p>Date: <input type="text" id="datepicker"></p>
+		</div>
+	</div>
+</div>
+<hr>
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+    <li><a href="#tabs-2">Proin dolor</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. </p>
+  </div>
+</div>
+<hr>
+<div class="container">
+	<p><a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
+the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
+<p>But as it&apos;s not a native tooltip, it can be styled. Any themes built with
+<a href="http://jqueryui.com/themeroller/" title="ThemeRoller: jQuery UI&apos;s theme builder application">ThemeRoller</a>
+will also style tooltips accordingly.</p>
+<p>Tooltips are also useful for form elements, to show some additional information in the context of each field.</p>
+<p><label for="age">Your age:</label><input id="age" title="We ask for your age only for statistical purposes."></p>
+<p>Hover the field to see the tooltip.</p>
+</div>
+	</div>
+</div>
+
+<hr>
+
+<div class="container">
+	<div class="row">
+		<div class="toggler">
+  		<div id="effect" class="ui-corner-all">
+      	Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+  </div>
+</div>
+ 
+<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+	</div>
+</div>
+
+<hr>
+
+<div class="container">
+	<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+    <p>
+      Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+    </p>
+  </div>
+</div>
+ 
+<button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+</div>
+
+<hr>
+
+<div class="container">
+	<div class="row">
+
+	<div class="col-lg-4">
+		<div class="text-center">
+			<h2 class="counter">1,222,568.00</h2>
+		</div>
+	</div>
+		<div class="col-lg-4">
+		<div class="text-center">
+			<h2 class="counter">1,222,568.00</h2>
+		</div>
+	</div>
+		<div class="col-lg-4">
+		<div class="text-center">
+			<h2 class="counter">1,222,568.00</h2>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div id="countdown">
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="vendor/counter-up/jquery.counterup.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
